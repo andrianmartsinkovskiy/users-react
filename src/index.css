@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  color: #fff;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #333;
+}
+
+.navbar_link {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_link-active {
+  background: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.page {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.users-list {
+  display: grid;
+  gap: 16px;
+}
+
+.user-card {
+  border-radius: 8px;
+  border: 1px solid #222;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr;
+}
+.user-card > div {
+  padding: 8px;
+  border: 1px solid #222;
+}
+
+.error-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  height: 80px;
+}
+
+.loading-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+  border: 1px solid #444;
+  height: 80px;
+}
+
+.user-form {
+  width: 100%;
+  display: grid;
+  row-gap: 16px;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  background: #111;
+  border: #333;
+  color: #fff;
+  font-size: 16px;
+  outline: none !important;
+}
+
+.input-error {
+  border: 1px solid #ff0000 !important;
+}
+
+.btn {
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4C5578;
+  color: #fff;
+  font-size: 16px;
+}
